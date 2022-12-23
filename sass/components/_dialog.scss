@@ -1,0 +1,54 @@
+
+.dialog_container{
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 30;
+}
+dialog{
+    width:40%;
+    z-index: 30;
+    margin: 10px auto 0 auto;
+    overflow:hidden;
+    border-radius: $main-radius;
+}
+dialog h1{
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;  
+    margin-bottom: 10px;
+}
+.input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;  
+    gap: 5px;
+    margin-bottom: 10px;
+}
+.input input,
+dialog .input select{
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid $btn-border-color;
+    outline: none;
+}
+
+textarea{
+    resize: none;
+    border-radius: 10px;
+    outline: none;
+}
+label{
+    font-weight: bold;
+}
+.btn_dialog{
+    padding: 5px 20px; 
+    margin-bottom: 10px;
+}
+.error{
+    color: #ff0000;
+}

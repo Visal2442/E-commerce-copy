@@ -1,0 +1,72 @@
+
+// === Card button ====
+.card_button{
+    display: flex;
+    justify-content: space-between;
+}
+.card_button button{
+    border-radius: $main-radius;
+    padding: $btn-padding;
+    z-index: 1;
+    cursor: pointer;
+}
+.card_button button:first-child{
+    border: 1px solid $btn-border-color;
+    background: #fff;  
+}
+.card_button button:hover{
+    opacity: 0.5;
+}
+.card_button button:last-child{
+    border: none;
+    background: $btn-primary-bg;
+    color: white;
+}
+
+.previous,
+.next,
+.right,
+.left{
+    position: absolute;
+    top: 35%;
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+
+// ==== Seller button =====
+.action button:last-child{
+    background: $btn-delete-bg;
+}
+.add{
+    justify-content: flex-end;
+}
+.add button{
+    margin: 0 5% 2% 5%;
+    padding: $btn-padding;
+}
+.action i{
+    display: none;
+}
+
+
+// ===== Cart button =====
+.btn_buy{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 10px;
+}
+.btn_buy button a{
+    color: #fff;    
+}
+.btn_delete_cart button:last-child{
+    background: $btn-delete-bg;
+}
+
+
+// ==== Check out button====
+.btn_checkout button{
+    width: 100%;
+    margin-top: 5px;
+}

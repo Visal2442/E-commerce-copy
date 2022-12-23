@@ -1,0 +1,28 @@
+
+.search_container{
+    background: #fff;
+    width: 100%;
+}
+.sort_container{
+    width: 60%;
+    display: flex;
+    margin: auto;
+}
+.search_input{
+    display: flex;
+    width: 100%;
+}
+.search_container select{
+    border-radius: 10px;
+    outline: none;
+    border-radius: 10px 0 0 10px;
+    margin: 30px 0;
+}
+input[type="search"]{
+    width: 100%;
+    padding: 15px;
+    border-radius: 0 10px 10px 0;
+    outline: none;
+    border: 1px solid #000;
+    margin: 30px 0;
+}

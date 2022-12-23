@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <!-- <link rel="stylesheet" href="../../css/style.css"> -->
+    <link rel="stylesheet" href="../../css/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container ">
+         <!-- ====NAV BAR====== -->
+         <div class="nav_bar">
+            <div class="nav_left">
+                <img src="../../img/logo.png" alt="Logo">
+            </div>
+            <div class="nav_right">
+                <ul>
+                    <div class="number"></div>
+                    <li class="nav_link"><a href="../../index.html">HOME</a></li>
+                    <li class="nav_link"><a href="store.html" class="active">STORE</a></li>
+                    <li class="nav_link"><a href="../seller/seller.html">SELLER</a></li>
+                    <li class="nav_link"><a href="../cart/cart.html">CART</a></li>
+                    <li class="nav_link"><a href="#" onclick="showLogin()">SIGN UP</a></li>
+                </ul>
+            </div>
+            <i id="bar" class="fa fa-bars" onclick="showMenu()"></i>
+            <i id="light" class="fa fa-toggle-off" onclick="darkMode()"></i>
+        </div>
+
+        <!-- ====== Scroll Progress ===== -->
+        <div class="progress_container">
+            <div class="progress_scroll"></div>
+        </div>
+         
+         <!-- ======= Search====== -->
+         <div class="store_banner">
+            <img src="../../img/bg_2.jpg" id="slide" >
+             <div class="banner_text">
+                <h1>E-Shop</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, cupiditate at quam dolorem voluptatum unde aspernatur consectetur nostrum repellat laudantium soluta omnis ratione itaque aliquid consequuntur dolorum, in deleniti quo!</p>
+             </div>
+           
+            <div class="search_container">
+                <div class="sort_container">
+                    <select name="price" id="price" onchange="sort()">
+                        <option disabled selected>Sort by price</option>
+                        <option value="0">All products</option>
+                        <option value="50">$50</option>
+                        <option value="100">$100</option>
+                        <option value="300">$300</option>
+                        <option value="500">$500</option>
+                        <option value="700">$700</option>
+                        <option value="900">$900</option>
+                        <option value="1000">$1000</option>
+                        <option value="2000">$2000</option>
+                    </select>
+                    <div class="search_input">
+                        <input type="search" name="search" id="search" onkeyup="search()" placeholder="Search product here..">
+                    </div>
+                </div>
+            </div>
+            <h1 class="header">All Products</h1>
+        </div>
+
+        <!-- ===== All products =====-->
+        <div class="card_container"></div>
+        
+        <!-- ======= Form Login ==== -->
+        <div class="form_container">
+            <form action="../store/store.html">
+                <h1>SING UP</h1>
+                <div class="name">
+                    <div class="first_name input">
+                        <label for="name">First Name</label>
+                        <input type="text" id="first_name" placeholder="Type your firstname ...">
+                    </div>
+                    <div class="last_name input">
+                        <label for="name">Last Name</label>
+                        <input type="text" id="last_name" placeholder="Type your lastname ...">
+                    </div>
+                </div>
+                <div class="pwd input">
+                    <label for="pwd">Password</label>
+                    <input type="password" id="pwd" placeholder="Password ...">
+                </div>
+                <div class="confirm input">
+                    <label for="confirm">Confirm Your Password</label>
+                    <input type="password" id="confirm" placeholder="Confirm your password ...">
+                </div>
+                <div class="btn_login input card_button">
+                    <button type="button">Create Account</button>
+                </div>
+                <i class="fa fa-times" style="font-size: 30px;" onclick="hideLogin()"></i>
+            </form>
+        </div>
+     
+            <!-- ======= Detail ======= -->
+        <div class="detail" style="display: none;"></div>
+
+          <!-- ========= Footer ========== -->
+          <footer>
+            <div class="contact_us more">
+                <img src="../../img/logo.png" alt="Logo" width="100">
+                <p><a href="#">dembo445@gmail.com</a></p>
+                <div class="social_madia">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                </div>
+            </div>
+            <div class="shop more">
+                <h2>All product</h2>
+                <p><a href="store.html">Clothes</a></p>
+                <p><a href="store.html">Shoes</a></p>
+                <p><a href="store.html">Pants</a></p>
+            </div>
+            <div class="coorporation more">
+                <h2>Coorporation</h2>
+                <div class="partner_logo">
+                    <a href="https://www.adidas.com/us/blog/932571-adidas-logos-history-and-meaning"><img src="../../img/addidas.png" alt="" width="50"></a>
+                    <a href="https://www.kickscrew.com/products/air-jordan-1-retro-high-og-brotherhood-555088-706"><img src="../../img/jordan.png"alt="" width="40"></a>
+                    <a href="https://www.nike.com/il/"><img src="../../img/nike.png"  alt="" width="50"></a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+<script src="store.js"></script>
+</html>

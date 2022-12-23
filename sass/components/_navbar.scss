@@ -1,0 +1,56 @@
+
+.nav_bar{
+    background:rgb(243, 243, 243);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:sticky; 
+    top: 0;
+    z-index: 5; 
+    padding: 5px 50px;
+}
+.nav_left img{
+    width: 150px;
+}
+.nav_right ul{
+    display: flex;
+    list-style: none;
+}
+.nav_right .nav_link a{
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 50px;
+    color: $text-color;
+}
+.nav_right .nav_link a:hover{
+    border-bottom: 4px solid #5c5c59;
+}
+.number{
+    position: absolute;
+    right: 39%;
+    top: 23%;
+    font-size:x-large;
+    color: red;
+}
+#light{
+    font-size: 30px;
+    cursor: pointer;
+}
+#bar{
+    display: none;
+}
+.dark{
+    background: rgba(5, 4, 4, 0.9);
+}
+.progress_container{
+    background: $bg-footer;
+    position: sticky;
+    z-index: 20;
+    top: 15%;
+    width: 100%;
+}
+.progress_scroll{
+    background:$text-color;
+    height: 8px;
+    width: 0%;
+}

@@ -1,0 +1,20 @@
+
+footer{
+    background: $bg-footer;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;   
+}
+.more{
+    display: flex;
+    flex-direction: column;
+    gap: 10px ;
+}
+.more p a{
+    text-decoration: none;
+    color: $text-color;
+}
+.social_madia i{
+    font-size:x-large;
+    margin-right: 3px;
+}

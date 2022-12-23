@@ -1,0 +1,35 @@
+
+.card_container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 20px 70px;
+}
+.card{
+    background: $main-color;
+    border-radius: $main-radius;
+    box-shadow: 0 1px 5px rgba(188, 174, 174, 0.5);
+    padding: 10px;
+    transition: 1.5s;
+}
+.card:hover{
+    box-shadow: 0 1px 5px rgb(188, 186, 186);
+    transform: translateY(-20px);
+}
+.card_footer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+}
+.card_img img{
+    width: 280px;
+    height: 350px;
+    border-radius: 20px;
+}
+.card_title{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}

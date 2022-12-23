@@ -1,0 +1,25 @@
+.detail{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    padding: $main-padding;
+    margin-bottom: 20px;
+}
+.img img{
+    width: 400px;
+}
+.img_detail{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;  
+}
+.header{
+    background: #fff;
+    text-align: center;
+}
+.btn_detail{    
+    justify-content:flex-start;
+    gap: 10px;
+}

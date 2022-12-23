@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <!-- <link rel="stylesheet" href="../../css/style.css"> -->
+    <link rel="stylesheet" href="../../css/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container bg1">
+         <!-- ====NAV BAR====== -->
+         <div class="nav_bar">
+            <div class="nav_left">
+                <img src="../../img/logo.png" alt="Logo">
+            </div>
+            <div class="nav_right">
+                <ul>
+                    <div class="number"></div>
+                    <li class="nav_link"><a href="../../index.html">HOME</a></li>
+                    <li class="nav_link"><a href="../store/store.html">STORE</a></li>
+                    <li class="nav_link"><a href="seller.html" class="active">SELLER</a></li>
+                    <li class="nav_link"><a href="../cart/cart.html">CART</a></li>
+                    <li class="nav_link"><a href="#" onclick="showLogin()">SIGN UP</a></li>
+                </ul>
+            </div>
+            <i id="bar" class="fa fa-bars" onclick="showMenu()"></i>
+            <i id="light" class="fa fa-toggle-off" onclick="darkMode()"></i>
+        </div>
+
+         <!-- ====== Scroll Progress ===== -->
+         <div class="progress_container">
+            <div class="progress_scroll"></div>
+        </div>
+
+        <!-- ====== Scroll Progress ===== -->
+        <div class="progress_container">
+            <div class="progress_scroll"></div>
+        </div>
+       
+        <!-- ======== Your product ======= -->
+        <div class="product_container">
+            <h1>YOUR PRODUCT</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Description</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div class="card_button add">
+                <button type="button" onclick="onAdd()">Add Product</button>
+            </div>
+        </div>
+
+        <!-- ======= Dialog ===== -->
+        <div class="dialog_container">
+            <dialog open>
+                <h1>Add Product</h1>
+                <div class="product_name input">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Product Name... (only 25 characters or lower than that)" maxlength="25">
+                    <p class="error_name error" style="display: none;">Invalid Name*</p>
+                </div> 
+                <div class="more_info input">
+                    <label for="more_info">Description</label>
+                    <textarea name="more_info" id="more_info" cols="25" rows="3" placeholder="More detail"></textarea>
+                    <p class="error_decription error" style="display: none;">Fill Description*</p>
+                </div>
+                <div class="product_price input">
+                    <label for="price">Price</label>
+                    <input type="number" name="price" id="price" min="1" placeholder="Your price ...">
+                    <p class="error_price error" style="display: none;">Invalid Number*</p>
+                </div>
+                <div class="currency input">
+                    <label for="currency">Currency</label>
+                    <select name="currency" id="currency">
+                        <option disabled selected>Choose your currency ...</option>
+                        <option value="USD">Dollar</option>
+                        <option value="Pound">Pound</option>
+                        <option value="KHM">KHM</option>
+                    </select>
+                    <p class="error_currency error" style="display: none;">Choose Currency*</p>
+                </div>
+                <div class="product_img input">
+                    <label for="image">Image</label>
+                    <input type="text" name="image" id="image" placeholder="Image URL ...( image should be only width 300px and height 300px or lower than that )">
+                    <p class="error_image error" style="display: none;">Invalid Image*</p>
+                </div>
+                <div class="input">
+                    <label for="size">Size</label>
+                    <select name="size" id="size">
+                        <option disabled selected>Size</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                    <p class="error_size error" style="display: none;">Choose Size*</p>
+                </div>
+                <div class="card_button btn_dialog">
+                    <button type="button" onclick="cancel()">Cancel</button>
+                    <button type="button" onclick="addProduct()">Add Product</button>
+                </div>
+            </dialog>
+        </div>
+
+    </div>
+    <div class="container bg2"></div>
+    
+</body>
+<script src="seller.js"></script>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- ====NAV BAR====== -->
+        <div class="nav_bar">
+            <div class="nav_left">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+            <div class="nav_right">
+                <ul>
+                    <div class="number"></div>
+                    <li class="nav_link"><a href="index.html" class="active">HOME</a></li>
+                    <li class="nav_link"><a href="html/store/store.html">STORE</a></li>
+                    <li class="nav_link"><a href="html/seller/seller.html">SELLER</a></li>
+                    <li class="nav_link"><a href="html/cart/cart.html">CART</a></li>
+                    <li class="nav_link"><a href="#" onclick="showLogin()">SIGN UP</a></li>
+                </ul>
+            </div>
+            <i id="bar" class="fa fa-bars" onclick="showMenu()"></i>
+            <i id="light" class="fa fa-toggle-off" onclick="darkMode()"></i>
+        </div>
+
+        <!-- ====== Scroll Progress ===== -->
+        <div class="progress_container">
+            <div class="progress_scroll"></div>
+        </div>
+
+         <!-- =====Banner====== -->
+         <div class="banner">
+            <div class="banner_left">
+                <h1>Air Jordan 6 Retro 'Electric Green' </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quo excepturi itaque eum ipsam necessitatibus exercitationem quia velit, odio perferendis aliquid sapiente maxime molestias atque modi dolore nulla facilis ullam? soluta libero laboriosam quod repellendus.</p>
+                <div class="card_button section">
+                    <button type="button">More Detail</button>
+                </div>
+            </div>
+            <div class="banner_right">
+                <img src="img/whiteJacket.png" alt="Air force red">
+            </div>
+        </div>
+
+        <!-- ===== Clothes all collection ===== -->
+        <div class="slide2_container">
+            <div class="clothes">
+                <div class="slide_top">
+                    <h1>New Collection</h1>
+                    <p><a href="html/store/store.html">See all</a></p>
+                </div>
+            <!-- =====Card container for slide show ==== -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper card_container">
+                    <div class="swiper-slide card" data-index="0">
+                        <div class="card_img">
+                            <img src="img/jacket1.png" alt="Black">
+                        </div>
+                        <div class="card_footer">
+                            <div class="card_title">
+                                <p class="title">Glennaker Rain Jacket</p>
+                                <p id="price">$40</p>
+                            </div>
+                            <div class="card_rate">
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                            </div>
+                            <div class="card_button">
+                                <button type="button" onclick="showDetail(event)">Detail</button>
+                                <button type="button">Add cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-index="1">
+                        <div class="card_img">
+                            <img src="img/jacket3.png" alt="Brown">
+                        </div>
+                        <div class="card_footer">
+                            <div class="card_title">
+                                <p class="title">Flannel Lined Jacket</p>
+                                <p id="price">$70</p>
+                            </div>
+                            <div class="card_rate">
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                            </div>
+                            <div class="card_button">
+                                <button type="button" onclick="showDetail(event)">Detail</button>
+                                <button type="button">Add cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-index="2">
+                        <div class="card_img">
+                            <img src="img/jacket2.png" alt="Colorful">
+                        </div>
+                        <div class="card_footer">
+                            <div class="card_title">
+                                <p class="title">Flannel Lined Jacket</p>
+                                <p id="price">$100</p>   
+                            </div>
+                            <div class="card_rate">
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                            </div>
+                            <div class="card_button">
+                                <button type="button" onclick="showDetail(event)">Detail</button>
+                                <button type="button">Add cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-index="3">
+                        <div class="card_img">
+                            <img src="img/whiteJacket.png" alt="Colorful">
+                        </div>
+                        <div class="card_footer">
+                            <div class="card_title">
+                                <p class="title">White Man Jacket</p>
+                                <p id="price">$100</p>   
+                            </div>
+                            <div class="card_rate">
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                            </div>
+                            <div class="card_button">
+                                <button type="button" onclick="showDetail(event)">Detail</button>
+                                <button type="button">Add cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+        <!-- ======= SLIDE SHOW 3===== -->
+        <div class="slide2_container">
+            <div class="shoes">
+                <!-- =====Card container for slide show ==== -->
+                <div class="slide_top">
+                    <h1>New Collection</h1>
+                    <p><a href="html/store/store.html">See all</a></p>
+                </div>
+                <div class="card_container">
+                    <div class="card" data-index="4">
+                        <div class="card_img">
+                            <img src="img/shoe4.png" alt="Black">
+                        </div>
+                        <div class="card_footer">
+                            <div class="card_title">
+                                <p class="title">WMNS Air Jordan 1 Mid</p>
+                                <p id="price">$200</p>
+                            </div>
+                            <div class="card_rate">
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                            </div>
+                            <div class="card_button">
+                                <button type="button" onclick="showDetail(event)">Detail</button>
+                                <button type="button">Add cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-index="5">
+                        <div class="card_img">
+                            <img src="img/shoe3.png" alt="Black">
+                        </div>
+                        <div class="card_footer">
+                            <div class="card_title">
+                                <p class="title">Air Jordan 4 Retro 'Red Thunder'<br> Unisex Sweatheart</p>
+                                <p id="price">$350</p>
+                            </div>
+                            <div class="card_rate">
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                            </div>
+                            <div class="card_button">
+                                <button type="button" onclick="showDetail(event)">Detail</button>
+                                <button type="button">Add cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-index="6">   
+                        <div class="card_img">
+                            <img src="img/shoe2.png" alt="Black">
+                        </div>
+                        <div class="card_footer">
+                            <div class="card_title">
+                                <p class="title">Air Jordan 1 Retro High OG NRG</p>
+                                <p id="price">$400</p>
+                            </div>
+                            <div class="card_rate">
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                            </div>
+                            <div class="card_button">
+                                <button type="button" onclick="showDetail(event)">Detail</button>
+                                <button type="button">Add cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-index="7">
+                        <div class="card_img">
+                            <img src="img/shoe1.png" alt="Black">
+                        </div>
+                        <div class="card_footer">
+                            <div class="card_title">
+                                <p class="title">Air Jordan 1 Retro</p>
+                                <p id="price">$200</p>
+                            </div>
+                            <div class="card_rate">
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                            </div>
+                            <div class="card_button">
+                                <button type="button" onclick="showDetail(event)">Detail</button>
+                                <button type="button">Add cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- =======Detail product===== -->
+        <div class="detail" style="display: none;"></div>
+
+         <!-- ======= Form Login ==== -->
+         <div class="form_container">
+            <form action="../store/store.html">
+                <h1>SING UP</h1>
+                <div class="name">
+                    <div class="first_name input">
+                        <label for="name">First Name</label>
+                        <input type="text" id="first_name" placeholder="Type your firstname ...">
+                    </div>
+                    <div class="last_name input">
+                        <label for="name">Last Name</label>
+                        <input type="text" id="last_name" placeholder="Type your lastname ...">
+                    </div>
+                </div>
+                <div class="pwd input">
+                    <label for="pwd">Password</label>
+                    <input type="password" id="pwd" placeholder="Password ...">
+                </div>
+                <div class="confirm input">
+                    <label for="confirm">Confirm Your Password</label>
+                    <input type="password" id="confirm" placeholder="Confirm your password ...">
+                </div>
+                <div class="btn_login input card_button">
+                    <button type="button">Create Account</button>
+                </div>
+                <i class="fa fa-times" style="font-size: 30px;" onclick="hideLogin()"></i>
+            </form>
+        </div>
+
+        <!-- ========= Footer ========== -->
+        <footer>
+            <div class="contact_us more">
+                <img src="img/logo.png" alt="Logo" width="100">
+                <p><a href="#">dembo445@gmail.com</a></p>
+                <div class="social_madia">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                </div>
+            </div>
+            <div class="shop more">
+                <h2>All product</h2>
+                <p><a href="html/store/store.html">Clothes</a></p>
+                <p><a href="html/store/store.html">Shoes</a></p>
+                <p><a href="html/store/store.html">Pants</a></p>
+            </div>
+            <div class="partner more">
+                <h2>Our Partners</h2>
+                <div class="partner_logo">
+                    <a href="https://www.adidas.com/us/blog/932571-adidas-logos-history-and-meaning"><img src="img/addidas.png" alt="" width="50"></a>
+                    <a href="https://www.kickscrew.com/products/air-jordan-1-retro-high-og-brotherhood-555088-706"><img src="img/jordan.png"alt="" width="40"></a>
+                    <a href="https://www.nike.com/il/"><img src="img/nike.png"  alt="" width="50"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="container bg2"></div>
+</body>
+<script src="main.js"></script>
+</html>

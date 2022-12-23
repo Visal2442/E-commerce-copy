@@ -1,0 +1,17 @@
+
+.slide2_container{
+    margin: 100px 0;
+}
+.slide2_container .slide_top{
+    font-weight: bold;
+    margin-top: 20px;
+    padding: $main-padding;
+}
+.slide2_container .slide_top p{
+    text-align:end;
+    cursor: pointer;
+    font-size: larger;
+}
+.slide_top h1{
+    text-align: center;
+}

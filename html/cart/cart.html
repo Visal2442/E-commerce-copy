@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <!-- <link rel="stylesheet" href="../../css/style.css"> -->
+    <link rel="stylesheet" href="../../css/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="container bg1">
+        <!-- ====NAV BAR====== -->
+        <div class="nav_bar">
+            <div class="nav_left">
+                <img src="../../img/logo.png" alt="Logo">
+            </div>
+            <div class="nav_right">
+                <ul>
+                    <div class="number"></div>
+                    <li class="nav_link"><a href="../../index.html">HOME</a></li>
+                    <li class="nav_link"><a href="../store/store.html">STORE</a></li>
+                    <li class="nav_link"><a href="../seller/seller.html">SELLER</a></li>
+                    <li class="nav_link"><a href="cart.html" class="active">CART</a></li>
+                    <li class="nav_link"><a href="#" onclick="showLogin()">SIGN UP</a></li>
+                </ul>
+            </div>
+            <i id="light" class="fa fa-toggle-off" onclick="darkMode()"></i>
+            <i id="bar" class="fa fa-bars" onclick="showMenu()"></i>
+        </div>
+        <div class="cart">
+            <div class="cart_container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Quntity</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <h1 class="empty">Your Cart is Empty</h1>
+                    </tbody>
+                </table>
+    
+                <div class="total_price">
+                    <div class="total">
+                        <p>Total price: <b>600</b></p>
+                        <p>Discount: <b>$0</b></p>
+                    </div>
+                    <div class="btn_buy card_button">
+                        <button type="button" onclick="checkOut()">CHECKOUT</button>
+                        <button type="button"><a href="../store/store.html"> CONTINUE SHOPPING</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    <!-- ====== Check out form ===== -->
+    <div class="modal">
+        <div class="checkout_container">
+            <div class="checkout_left">
+                <img src="../../img/credit_card.png" alt="Credit Card">
+            </div>
+            <div class="checkout_right">
+                <h1>Checkout Here</h1>
+                <div class="cards">
+                    <i class="fa fa-cc-visa" style="color: darkblue;"></i>
+                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                </div>
+                <div class="credit_name credit">
+                    <label for="name">Name on Card</label>
+                    <input type="text" name="name" id="credit_name" placeholder="Sork Visal">
+                </div>
+                <div class="address credit">
+                    <label for="address">Address</label>
+                    <input type="text" id="adddress" placeholder="Your Address">
+                </div>
+                <div class="phone credit">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                </div>
+                <div class="credit_number credit">
+                    <label for="number">Credit Card Number</label>
+                    <input type="text" id="credit_number" placeholder="0000 - 0000 - 0000 - 0000">
+                </div>
+                <div class="exp_month credit">
+                    <label for="expire">Exp Month / Year</label>
+                    <input type="number" name="exp" id="expire" placeholder="00 / 00">
+                </div>
+                <div class="btn_checkout card_button">
+                    <button type="button" onclick="checkCreditCard()">Purchase</button>
+                </div>
+            </div>
+            <i class="fa fa-times" style="font-size: 30px;" onclick="hideCheckOut()"></i>
+        </div>
+    </div>
+
+      <!-- ======= Form Login ==== -->
+      <div class="form_container">
+        <form action="../store/store.html">
+            <h1>SING UP</h1>
+            <div class="name">
+                <div class="first_name input">
+                    <label for="name">First Name</label>
+                    <input type="text" id="first_name" placeholder="Type your firstname ...">
+                </div>
+                <div class="last_name input">
+                    <label for="name">Last Name</label>
+                    <input type="text" id="last_name" placeholder="Type your lastname ...">
+                </div>
+            </div>
+            <div class="pwd input">
+                <label for="pwd">Password</label>
+                <input type="password" id="pwd" placeholder="Password ...">
+            </div>
+            <div class="confirm input">
+                <label for="confirm">Confirm Your Password</label>
+                <input type="password" id="confirm" placeholder="Confirm your password ...">
+            </div>  
+            <div class="btn_login input card_button">
+                <button type="button">Create Account</button>
+            </div>
+            <i class="fa fa-times" style="font-size: 30px;" onclick="hideLogin()"></i>
+        </form>
+    </div>
+    
+
+     <!-- ========= Footer ========== -->
+     <footer>
+        <div class="contact_us more">
+            <img src="../../img/logo.png" alt="Logo" width="100">
+            <p><a href="#">dembo445@gmail.com</a></p>
+            <div class="social_madia">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+            </div>
+        </div>
+        <div class="shop more">
+            <h2>All product</h2>
+            <p><a href="html/store/store.html">Clothes</a></p>
+            <p><a href="html/store/store.html">Shoes</a></p>
+            <p><a href="html/store/store.html">Pants</a></p>
+        </div>
+        <div class="partner more">
+            <h2>Our Partners</h2>
+            <div class="partner_logo">
+                <a href="https://www.adidas.com/us/blog/932571-adidas-logos-history-and-meaning"><img src="../../img/addidas.png" alt="" width="50"></a>
+                <a href="https://www.kickscrew.com/products/air-jordan-1-retro-high-og-brotherhood-555088-706"><img src="../../img/jordan.png"alt="" width="40"></a>
+                <a href="https://www.nike.com/il/"><img src="../../img/nike.png"  alt="" width="50"></a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+<script src="cart.js"></script>
+</html>
